@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.HomeFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/dp_162"
+        android:layout_height="@dimen/dp_188"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:src="@drawable/ic_mic_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imagebutton_list_audio_recoder"
+        android:layout_width="@dimen/dp_62"
+        android:layout_height="@dimen/dp_62"
+        android:layout_marginStart="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_62"
+        android:background="@drawable/btn_list_audio_recover"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_time" />
+
+    <ImageButton
+        android:id="@+id/imagebutton_play"
+        android:layout_width="@dimen/dp_62"
+        android:layout_height="@dimen/dp_62"
+        android:layout_marginStart="@dimen/dp_62"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/btn_play"
+
+        app:layout_constraintEnd_toStartOf="@+id/imagebutton_save"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toEndOf="@+id/imagebutton_list_audio_recoder"
+        app:layout_constraintTop_toBottomOf="@+id/text_time" />
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="@dimen/dp_162"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:text="@string/time"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/dp_32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageButton
+        android:id="@+id/imagebutton_save"
+        android:layout_width="@dimen/dp_62"
+        android:layout_height="@dimen/dp_62"
+        android:layout_marginTop="@dimen/dp_62"
+        android:layout_marginEnd="@dimen/dp_40"
+        android:background="@drawable/btn_stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_time" />
+
+</android.support.constraint.ConstraintLayout>
+
